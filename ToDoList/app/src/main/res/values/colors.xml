@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- colors for priortiyy -->
+    <color name = 'highPriority'> #FF0000</color>
+    <color name = 'mediumPriority' > #FFEB3b</color>
+    <color name = 'lowPriority' > #4CAf50 </color>
+
+
+
+
+</resources>

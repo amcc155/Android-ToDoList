@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--task_list.xml
+layout file for the lisview for this project
+created by Aidan McCormick
+Created on 2/27/2024
+last modified by Aidan McCormick
+last modified on 3/1/2024
+Final Project: A290 Android Development
+Part Of: To Do List project, refers to TaskListActivity.Java -->
+    <!--  main textview that just says Your Tasks -->
+    <TextView
+        android:id="@+id/txt_tasksHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/task_list_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- displays the listview, is centered in the middle of the screen -->
+    <ListView
+        android:id="@+id/listView_tasks"
+        android:layout_width="328dp"
+        android:layout_height="421dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_addTask"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_tasksHeader"
+        app:layout_constraintVertical_bias="0.473" />
+
+    <!-- button where user can add a task, is at bottom right corner -->
+    <Button
+        android:id="@+id/btn_addTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="84dp"
+        android:text="@string/add_task"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.861"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

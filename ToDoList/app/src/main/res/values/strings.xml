@@ -1,0 +1,27 @@
+<!--task_list.xml
+string file for the for this project
+created by Aidan McCormick
+Created on 2/27/2024
+last modified by Aidan McCormick
+last modified on 3/1/2024
+Final Project: A290 Android Development
+Part Of: To Do List project, refers to all activities -->
+<resources>
+    <!-- strings for main activity -->
+    <string name="app_name">ToDoList</string>
+    <string name = "welcome"> Welcome </string>
+    <string name = "task_status"> You have completed 0/N tasks</string>
+    <string name = "btn_view_task"> View Tasks </string>
+
+    <!-- strings for task list.xml -->
+    <string name ='task_list_header' > Your Current Tasks</string>
+    <string name = "add_task" > Add Task </string>
+
+     <!-- strings for radio button -->
+    <string name = 'Medium'> Medium </string>
+    <string name = 'High'> High </string>
+    <string name = 'Low' > Low</string>
+
+
+
+</resources>

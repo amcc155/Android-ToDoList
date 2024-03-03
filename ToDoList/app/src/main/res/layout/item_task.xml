@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+    <!--- item_task.xml
+layout file for the task display in listView
+created by Aidan McCormick
+Created on 2/27/2024
+last modified by Aidan McCormick
+last modified on 3/1/2024
+Final Project: A290 Android Development
+Part Of: To Do List project, refers to TaskListActiity.java and listView view -->
+
+    <TextView
+        android:id="@+id/textViewTaskName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Task Name"
+
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textViewTaskDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- text that shows when task was created -->
+    <TextView
+        android:id="@+id/textViewTaskDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Due Date"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/textViewTaskName"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- trash button -->
+    <Button
+        android:id="@+id/btn_trash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remove"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTaskName" />
+
+    <!-- user chekcbox to indicate completion -->
+    <CheckBox
+        android:id="@+id/completedCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Complete?"
+        app:layout_constraintStart_toStartOf="@+id/textViewTaskName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTaskName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
